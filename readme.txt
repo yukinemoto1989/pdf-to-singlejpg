@@ -1,59 +1,59 @@
-PDF TO SINGLEJPG(PDF �� JPG �ϊ��A�v��)
+PDF TO SINGLEJPG(PDF → JPG 変換アプリ)
 ====================
 
-�o�[�W����1.0.0
+バージョン1.0.0
 
-�� �T�v
-�{�A�v���́APDF�t�@�C����1�y�[�W����JPEG�摜�ɕϊ�����Windows�A�v���ł��B
-Flet��PyMuPDF���g�p���Ă��܂��B
+■ 概要
+本アプリは、PDFファイルを1ページずつJPEG画像に変換するWindowsアプリです。
+FletとPyMuPDFを使用しています。
 
-�� �Ή���
+■ 対応環境
 - Windows 10 / 11 (64bit)
-- Python�s�v�i�P�̎��s�`���j
+- Python不要（単体実行形式）
 
-�� �g����
-1. �A�v�����N�����܂��iPDF_to_JPG.exe ���_�u���N���b�N�j
-2. �uPDF��I���v�{�^���ŕϊ�������PDF�t�@�C����I�т܂�
-3. �u�ۑ����I���v�ŏo�͐�t�H���_��I�т܂��i�ȗ��FPDF�Ɠ����ꏊ�ɂȂ�܂��j
-4. �u�ϊ��J�n�v�{�^���������ƁA1�y�[�W����JPEG�t�@�C���Ƃ��ĕۑ�����܂�
+■ 使い方
+1. アプリを起動します（PDF_to_JPG.exe をダブルクリック）
+2. 「PDFを選択」ボタンで変換したいPDFファイルを選びます
+3. 「保存先を選択」で出力先フォルダを選びます（省略可：PDFと同じ場所になります）
+4. 「変換開始」ボタンを押すと、1ページずつJPEGファイルとして保存されます
 
-�� �o�͌`��
-- �t�@�C�����F`���̃t�@�C����_page_1.jpg` �̂悤�ɏo�͂���܂�
-- �𑜓x�F200dpi�Œ�
+■ 出力形式
+- ファイル名：`元のファイル名_page_1.jpg` のように出力されます
+- 解像度：200dpi固定
 
-�� ���ӓ_
-- PDF���ی삳��Ă���ꍇ�͕ϊ��ł��Ȃ����Ƃ�����܂�
-- �o�͐�Ɋ��ɓ����̃t�@�C��������Ə㏑������܂�
+■ 注意点
+- PDFが保護されている場合は変換できないことがあります
+- 出力先に既に同名のファイルがあると上書きされます
 
-�� �쐬��
+■ 作成者
 Yuki Nemoto
 https://github.com/yukinemoto1989/website
 yknm1989@outlook.com
 
-�� ���C�Z���X
-�{�A�v���̓t���[�\�t�g�E�F�A�ł��B
-���p���p�A�Ĕz�z�A���ς����R�ɉ\�ł��B
-�������A�g�p���Ă��郉�C�u�����̃��C�Z���X�����ɏ]���K�v������܂��B
+■ ライセンス
+本アプリはフリーソフトウェアです。
+商用利用、再配布、改変が自由に可能です。
+ただし、使用しているライブラリのライセンス条件に従う必要があります。
 
-�� ���C�Z���X�ƃ\�[�X�R�[�h
-�\�[�X�R�[�h���J��F
+■ ライセンスとソースコード
+ソースコード公開先：
 https://github.com/yukinemoto1989/pdf-to-singlejpg
 
-�{�A�v���͈ȉ��̃I�[�v���\�[�X���C�u�������g�p���Ă��܂��B
+本アプリは以下のオープンソースライブラリを使用しています。
 
-�� Flet
-���C�Z���X�FApache License 2.0
+● Flet
+ライセンス：Apache License 2.0
 
-�����F���쌠�\������у��C�Z���X�����̓������K�v�ł��B
+条件：著作権表示およびライセンス文書の同梱が必要です。
 
-�� PyMuPDF
-���C�Z���X�FGNU General Public License v3�iGPLv3�j
+● PyMuPDF
+ライセンス：GNU General Public License v3（GPLv3）
 
-�����F
+条件：
 
-�\�t�g�E�F�A�̍Ĕz�z���ɂ̓\�[�X�R�[�h�̌��J���K�v�ł��B
+ソフトウェアの再配布時にはソースコードの公開が必要です。
 
-���p���p��N���[�Y�h�\�[�X�ł̗��p�ɂ́A�ʓr PyMuPDF �̏��p���C�Z���X���K�v�ł��B
+商用利用やクローズドソースでの利用には、別途 PyMuPDF の商用ライセンスが必要です。
 
-�{�A�v���� GPLv3 �ɏ������Ă���A�\�[�X�R�[�h�ꎮ�𓯍��܂��͌��J���Ă��܂��B
-�Ĕz�z�E���ς͎��R�ł����AGPLv3 �̏��������炵�Ă��������B
+本アプリは GPLv3 に準拠しており、ソースコード一式を同梱または公開しています。
+再配布・改変は自由ですが、GPLv3 の条件を遵守してください。
